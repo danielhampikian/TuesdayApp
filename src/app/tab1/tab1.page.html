@@ -9,9 +9,11 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
+      <ion-title size="large">Home Page</ion-title>
     </ion-toolbar>
   </ion-header>
-
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <ion-button [routerLink]="['/detail']" size="large" shape="round" color="secondary" expand="block">
+    <ion-icon slot="icon-only" name="star"></ion-icon>
+  </ion-button>
+  <app-explore-container name="Home"></app-explore-container>
 </ion-content>
